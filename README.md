@@ -1,40 +1,49 @@
 # Bird Flocking Simulation: Vicsek and Chaté Models
 
+<p align="center">
+  <img src="gifts/vicsek_eta=0.50_N=400.gif" alt="Vicsek model – eta=0.50" width="400">
+</p>
+
 This repository contains a 2D visual simulation of self-propelled particle systems using:
 
-- 🟦 **Vicsek Model (1995)** – angular noise applied after averaging neighbor directions.
-- 🔶 **Chaté Variant (2004)** – vectorial noise applied before averaging.
+- 🟦 **Vicsek Model (1995)** – angular noise applied *after* averaging neighbor directions.
+- 🔶 **Chaté Variant (2004)** – vectorial noise applied *before* averaging.
 
-These models are used to study how individual agents (like birds, bacteria or robots) can spontaneously organize into collective motion without a leader.
+These models are widely used to understand how individual agents (e.g., birds, bacteria or robots) can organize into coherent motion without any centralized control.
+
+---
 
 ## 🎥 Visualizations
 
-Simulations of 400–1000 particles moving and aligning in 2D with periodic boundaries under varying noise intensity (η). Lower noise → higher alignment.
+Each simulation explores how noise affects global order in systems of 400–1000 particles.  
+Lower noise → higher alignment and flocking.
 
 | Vicsek | Chaté |
 |--------|-------|
 | ![](gifs/vicsek_eta=1.5_N=400.gif) | ![](gifs/vicsek_chate_eta=4.5_N=1000.gif) |
 
-## ⚙️ How it works
+## ⚙️ How It Works
 
-- `vicsek.py`: basic Vicsek model.
-- `chate.py`: extended Chaté version (vectorial noise).
+- `vicsek.py`: implements the original Vicsek model.
+- `chate.py`: implements the Chaté-Gregoire extension.
 
-Both scripts generate animated GIFs directly into the `gifs/` folder.
+Both scripts generate animated GIFs in the `gifts/` directory for different values of noise `η`.
 
-## 📌 Key Parameters
+## 📌 Model Parameters
 
-| Parameter      | Value         |
-|----------------|---------------|
-| Particles \(N\)     | 50–1000       |
-| Box size \(L\)       | 10            |
-| Speed \(v\)          | 0.03          |
-| Interaction radius \(r\) | 1.0      |
-| Noise η         | 0.5 – 5.0      |
-| Boundaries      | Periodic       |
-![](gifs/vicsek_eta=0.50_N=400.gif)
-## ▶️ Run locally
+| Parameter        | Value           |
+|------------------|-----------------|
+| Number of particles \(N\) | 400–1000         |
+| Domain size \(L\)          | 10               |
+| Speed \(v\)                | 0.03             |
+| Vision radius \(r\)        | 1.0              |
+| Noise η                   | 0.5 – 5.0         |
+| Boundary conditions       | Periodic         |
 
-Install requirements:
+## ▶️ Running the Simulations
+
+Install required libraries:
+
 ```bash
 pip install numpy matplotlib
+
