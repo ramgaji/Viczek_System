@@ -11,17 +11,6 @@ This repository contains a 2D visual simulation of self-propelled particle syste
 
 These models are widely used to understand how individual agents (e.g., birds, bacteria or robots) can organize into coherent motion without any centralized control.
 
----
-
-## 🎥 Visualizations
-
-Each simulation explores how noise affects global order in systems of 400–1000 particles.  
-Lower noise → higher alignment and flocking.
-
-| Vicsek | Chaté |
-|--------|-------|
-| ![](gifs/vicsek_eta=1.5_N=400.gif) | ![](gifs/vicsek_chate_eta=4.5_N=1000.gif) |
-
 ## ⚙️ How It Works
 
 - `vicsek.py`: implements the original Vicsek model.
