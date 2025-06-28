@@ -22,7 +22,7 @@ Both scripts generate animated GIFs in the `gifts/` directory for different valu
 
 | Parameter        | Value           |
 |------------------|-----------------|
-| Number of particles \(N\) | 400–1000         |
+| Number of particles \(N\) | 50–1000         |
 | Domain size \(L\)          | 10               |
 | Speed \(v\)                | 0.03             |
 | Vision radius \(r\)        | 1.0              |
