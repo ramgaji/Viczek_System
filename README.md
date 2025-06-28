@@ -32,7 +32,7 @@ Both scripts generate animated GIFs directly into the `gifs/` folder.
 | Interaction radius \(r\) | 1.0      |
 | Noise η         | 0.5 – 5.0      |
 | Boundaries      | Periodic       |
-
+![](gifs/vicsek_eta=0.50_N=400.gif)
 ## ▶️ Run locally
 
 Install requirements:
